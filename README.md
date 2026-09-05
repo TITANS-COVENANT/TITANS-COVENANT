@@ -1,51 +1,40 @@
-<img src="https://raw.githubusercontent.com/AVS1508/AVS1508/master/assets/Aditya%20Vikram%20Singh%20Banner.png">
+# Paul Akogo
 
-<h2> Hey there! I'm Akogo Paul.</h2>
+Accra, Ghana. I build systems end to end — model layer through deployment — then sell and maintain them, which is a separate discipline from building them.
 
-<h3> 👨🏻‍💻 &nbsp;About Me </h3>
+---
 
-- 🤔 &nbsp; Exploring new technologies and developing software solutions and quick hacks.
-- 🎓 &nbsp; Studying Computer Science at Ghana Communications Technology University.
-- 🌱 &nbsp; Learning more about Cloud Architecture, Systems Design and Artificial Intelligence.
+## ClauseGuard — contract clause risk analysis
 
-<h3> 🛠 &nbsp;Tech Stack</h3>
+Transformer-based clause classification over the full CUAD taxonomy (41 categories), extended with 7 categories specific to freelance and SME contracts. A deterministic risk scorer sits on top; an LLM pass renders each flagged clause in plain English with a suggested alternative.
 
-- 💻 &nbsp;
-  ![Python](https://img.shields.io/badge/-Python-333333?style=flat&logo=python)
-  ![Java](https://img.shields.io/badge/-Java-333333?style=flat&logo=Java&logoColor=007396)
-  ![C++](https://img.shields.io/badge/-C++-333333?style=flat&logo=C%2B%2B&logoColor=00599C)
-  ![R (Statistics)](https://img.shields.io/badge/-R-333333?style=flat&logo=R&logoColor=276DC3)
-- 🌐 &nbsp;
-  ![HTML5](https://img.shields.io/badge/-HTML5-333333?style=flat&logo=HTML5)
-  ![CSS](https://img.shields.io/badge/-CSS-333333?style=flat&logo=CSS3&logoColor=1572B6)
-  ![JavaScript](https://img.shields.io/badge/-JavaScript-333333?style=flat&logo=javascript)
-  ![Bootstrap](https://img.shields.io/badge/-Bootstrap-333333?style=flat&logo=bootstrap&logoColor=563D7C)
-  ![Node.js](https://img.shields.io/badge/-Node.js-333333?style=flat&logo=node.js)
-  ![React](https://img.shields.io/badge/-React-333333?style=flat&logo=react)
-- 🛢 &nbsp;
-  ![MySQL](https://img.shields.io/badge/-MySQL-333333?style=flat&logo=mysql)
-  ![MongoDB](https://img.shields.io/badge/-MongoDB-333333?style=flat&logo=mongodb)
-- ⚙️ &nbsp;
-  ![Git](https://img.shields.io/badge/-Git-333333?style=flat&logo=git)
-  ![GitHub](https://img.shields.io/badge/-GitHub-333333?style=flat&logo=github)
-  ![Markdown](https://img.shields.io/badge/-Markdown-333333?style=flat&logo=markdown)
-- 🔧 &nbsp;
-  ![Visual Studio Code](https://img.shields.io/badge/-Visual%20Studio%20Code-333333?style=flat&logo=visual-studio-code&logoColor=007ACC)
-  ![RStudio](https://img.shields.io/badge/-RStudio-333333?style=flat&logo=rstudio)
-  ![Eclipse](https://img.shields.io/badge/-Eclipse-333333?style=flat&logo=eclipse-ide&logoColor=2C2255)
+- **Classifier** — Legal-BERT hybrid (embedding similarity + keyword sieve), hot-swappable for a fine-tuned checkpoint
+- **Pipeline** — `PDF → parser → classifier → risk scorer → simplifier → UI`, each stage independently testable
+- **Stack** — FastAPI, PyTorch/Transformers, Next.js; pytest with model loading stubbed so CI runs without pulling weights
+- **Constraint that shaped the design** — no persistent storage of contract content; documents are processed in memory and discarded
 
-<br/>
+→ [contract-risk-analyzer](https://github.com/TITANS-COVENANT/contract-risk-analyzer) · MIT
 
-<a href="https://github.com/TITANS-COVENANT">
-  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=TITANS-COVENANT&theme=buefy&show_icons=true" />
-  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=TITANS-COVENANT&theme=buefy&layout=compact" />
-</a>
+---
 
-<br/>
+## Production web systems for SMEs
 
-<h3> 🤝🏻 &nbsp;Connect with Me </h3>
+I build and operate web systems for businesses in Accra on monthly retainers — visa advisory, property management, travel operations — plus internal tooling: LinkedIn lead enrichment, AI-generated Shopify product copy.
 
-<p align="center">
-<a href="#"><img alt="Website" src="https://img.shields.io/badge/Website-#-blue?style=flat-square&logo=google-chrome"></a>
-<a href="https://www.linkedin.com/"><img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-paul-akogoSingh-blue?style=flat-square&logo=linkedin"></a>
-</p>
+The hard part is not the code. It is shipping software to non-technical owners, on Ghanaian infrastructure, that still works six months later without me touching it. That constraint drives the engineering: boring dependencies, no client-side surprises, one-command deploys, and failure modes I can diagnose from a phone.
+
+---
+
+## Fluxpoint
+
+SaaS sold into that existing client base rather than into a cold market. Distribution first, product second.
+
+---
+
+## How I work
+
+Most of my code in 2026 is written through AI tooling. That moves the job up the stack — architecture, failure modes, and the decisions that are expensive to reverse — it does not remove it. I optimise for systems that survive my absence.
+
+---
+
+BSc Computer Science, Nov 2026 · [LinkedIn](https://www.linkedin.com/in/paul-akogo/)
